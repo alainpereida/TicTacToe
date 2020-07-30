@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F28080"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/app_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="@string/app_name"
+        android:textColor="#262626"
+        android:textSize="30sp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#262626">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/imageButton1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_column="0"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginBottom="2.5dp"
+                android:background="@color/colorNatural"
+                android:onClick="onClick"
+                android:text="@string/marca_jugador_dos"
+                android:textSize="72dp" />
+
+            <Button
+                android:id="@+id/imageButton1_2"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_column="1"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginBottom="2.5dp"
+                android:background="@color/colorNatural"
+                android:onClick="onClick"
+                android:text="X"
+                android:textSize="72dp" />
+
+            <Button
+                android:id="@+id/imageButton1_3"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_column="2"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginBottom="2.5dp"
+                android:background="@color/colorNatural"
+                android:onClick="onClick"
+                android:text="O"
+                android:textSize="72dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/imageButton2_1"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_column="0"
+                android:layout_marginTop="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginBottom="2.5dp"
+                android:background="@color/colorNatural"
+                android:onClick="onClick"
+                android:text="O"
+                android:textSize="72dp" />
+
+            <Button
+                android:id="@+id/imageButton2_2"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_column="1"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginBottom="2.5dp"
+                android:background="@color/colorNatural"
+                android:onClick="onClick"
+                android:text="X"
+                android:textSize="72dp" />
+
+            <Button
+                android:id="@+id/imageButton2_3"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_column="2"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_marginBottom="2.5dp"
+                android:background="@color/colorNatural"
+                android:onClick="onClick"
+                android:text="X"
+                android:textSize="72dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/imageButton3_1"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_column="0"
+                android:layout_marginTop="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:background="@color/colorNatural"
+                android:onClick="onClick"
+                android:text="X"
+                android:textSize="72dp" />
+
+            <Button
+                android:id="@+id/imageButton3_2"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_column="1"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:background="@color/colorNatural"
+                android:onClick="onClick"
+                android:text="X"
+                android:textSize="72dp" />
+
+            <Button
+                android:id="@+id/imageButton3_3"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_column="2"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:background="@color/colorNatural"
+                android:onClick="onClick"
+                android:text="O"
+                android:textSize="72dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/jugadorUno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Jugador Uno"
+                android:textColor="#262626"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/puntiacionUno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#262626"
+                android:textSize="100sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/jugadorDos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/jugador_dos"
+                android:textColor="#262626"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/puntuacionDos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#262626"
+                android:textSize="100sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

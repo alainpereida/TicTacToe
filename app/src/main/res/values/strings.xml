@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="jugador_uno">Jugador Uno</string>
+    <string name="jugador_dos">Jugador Dos</string>
+    <string name="marca_jugador_uno">X</string>
+    <string name="marca_jugador_dos">O</string>
+    <string name="facebook_app_id">2706225416133690</string>
+    <string name="fb_login_protocol_scheme">fb2706225416133690</string>
+
+    <string name="title_activity_login">Tic Tac Toe</string>
+    <string name="cancelar">Se cancelo la operación</string>
+    <string name="error">Ocurrió un problema al ingresar</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_login_short">Login</string>
+    <string name="or">Or</string>
+    <string name="firebase_error_login">No es posible hacer la conexión</string>
+</resources>
